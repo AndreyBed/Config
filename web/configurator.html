@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конфигуратор</title>
+    <script src="eel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div id="all">
+        
+        <div id="prw">
+            <input type="button" id="start" value="Начать"><br>
+            <input type="button" id="info" value="Справка"><br>
+        </div>
+        
+        <div id="div_square_floors">
+            <input type="text" id="square" placeholder="Площадь 1го этажа"><br>
+            <input type="text" id="numbers_floors" placeholder="Кол-во этажей"><br>
+            <input type="button" id="enter" value="Далее"><br>
+        </div>
+
+        <div id="div_type_foundation">
+            <h1 id="found_label">Фундамент</h1><br>
+            <input type="button" id="tape" value="Ленточный"><br>
+            <input type="button" id="pile" value="Свайный"><br>
+            <input type="button" id="plate" value="Плитный"><br>
+        </div>
+
+        <div id="div_material">
+            <h1 id="material_label">Материал тела</h1><br>
+            <input type="button" id="bar" value="Брус"><br>
+            <input type="button" id="aerated_concrete_block" value="Газобетонный блок"><br>
+            <input type="button" id="ceramic_block" value="Керамоблок"><br>
+            <input type="button" id="brick" value="Кирпич"><br>
+            <input type="button" id="racks" value="Деревянный каркас"><br>
+        </div>
+
+        <div id="div_roof_type">
+            <h1 id="roof_label">Кровля</h1><br>
+            <input type="button" id="sheet_material" value="Листовые материалы"><br>
+            <input type="button" id="flexible_roof" value="Гибкая кровля"><br>
+            <input type="button" id="ceramic_roof" value="Штучные материалы"><br>
+        </div>
+        
+        <div id="result">
+            <div id="found_summa">Фундамент: </div>
+            <div id="material_summa">Тело дома: </div>
+            <div id="roof_summa">Кровля: </div>
+            <div id="summa">Итого: </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
